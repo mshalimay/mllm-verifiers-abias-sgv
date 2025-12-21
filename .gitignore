@@ -1,0 +1,205 @@
+# Secrets / credentials
+api_keys.json
+api_keys_backup.json
+**/evaluation_examples/settings/google/settings.json
+**/evaluation_examples/settings/googledrive/credentials.json
+**/evaluation_examples/settings/googledrive/client_secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+__pypackages__/
+
+# Native extensions / binaries
+*.so
+*.pth
+*.pt
+
+# IDE
+.vscode/
+.idea/
+.cursorignore
+
+# Build / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# OS
+.DS_Store
+
+# Logs & experiment outputs
+**/*.log
+log_files/
+logs/
+results/
+cache/
+**/result*/
+*.lock
+
+
+# Repo-specific generated folders
+temp_files/
+.auth/
+experiments/
+trajectories/
+docker_urls/
+docker_vm_data/
+vmware_vm_data/
+# Large downloaded docker artifacts (tars/zim). In this repo they live under `vwa/`.
+/vwa/environment_docker/docker_imgs/**
+
+# Keep selected tracked files under docker_imgs (Git requires un-ignoring parent dirs too)
+!/vwa/environment_docker/docker_imgs/
+!/vwa/environment_docker/docker_imgs/classifieds_docker_compose/
+!/vwa/environment_docker/docker_imgs/classifieds_docker_compose/docker-compose-raw.yml
+
+# Generated homepage templates (these are produced artifacts)
+/vwa/environment_docker/vwebarena-homepage/templates/index-*.html
+/vwa/environment_docker/webarena-homepage/templates/index-*.html
+
+# Data (ignore bulky datasets by default)
+**/data/**
+!**/utils/data/**
+
+# Misc caches / scratch
+**/tmp/**
+**/.logging/**
+**/.db_cache/**
+**/debugging/**
+
+# Frontend build caches (OSW)
+frontend/node_modules/
+frontend/.next/
+
+# Tooling / tags
+tags
+tags-opts
+
+# Office scratch
+test.xlsx
+test2.xlsx
+
+# Keep selected tracked files
+!requirements.txt
+
+# --- osw ---
+# Model checkpoints
+*.pth
+*.pt
+
+# Byte-compiled / optimized / DLL files (additional patterns)
+*$py.class
+
+# Distribution / packaging (additional common dirs)
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports (additional)
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django / DB
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook / IPython
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Spyder / Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+# mkdocs site
+/site
+
+# PEP-582
+__pypackages__/
+
+# tmp / misc
+api_key.py
+tmp.*
+
+# embedding / plugin caches
+instructor-embedding
+
+# frontend IDE
+frontend/.idea/
+
+# Package metadata dirs
+*.egg-info/
+
+

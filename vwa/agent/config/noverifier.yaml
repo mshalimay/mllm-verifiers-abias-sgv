@@ -1,0 +1,43 @@
+model_: &model_ gemini-2.5-flash
+
+#============================
+#EXECUTOR AGENT
+#============================
+executor:
+  action_set_tag: som
+  prompt: p_executor
+  num_previous_state_actions: 100
+  out_utterance: True
+  max_model_call: 9
+  use_web_k: False
+  use_reflexion: False
+  num_previous_reflections: -1
+  caption_input_images: True
+  
+  # Model specific configs
+  lm_config:
+    model: *model_
+    gen_config_alias: base
+
+#============================
+# TEXT REFINER
+#============================
+text_refiner:
+  max_obs_length: 3840
+  chars_per_token: 4
+  lm_config:
+    _inherit_from: executor
+
+
+#=============================
+# CAPTIONER
+#=============================
+captioner:
+  lm_config:
+    model: Salesforce/blip2-flan-t5-xl
+
+#============================
+# REQUEST REFINER
+#============================
+request_refiner:
+  caption_input_img: True

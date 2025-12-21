@@ -1,0 +1,208 @@
+gpt-4o-2024-08-06:
+  base:
+    temperature: 1.0
+    top_p: 0.9
+    max_tokens: 768
+    name_user: 'user'
+    name_assistant: 'assistant'
+    img_detail: 'auto'
+    text_first: True
+
+  zero_random:
+    temperature: 1.0
+    top_p: 0.01
+    max_tokens: 768
+    name_user: 'user'
+    name_assistant: 'assistant'
+    img_detail: 'auto'
+    text_first: True
+
+
+gpt-4o-mini-2024-07-18:
+  base:
+    temperature: 1.0
+    top_p: 0.9
+    max_tokens: 768
+    name_user: 'user'
+    name_assistant: 'assistant'
+    img_detail: 'auto'
+    text_first: True
+
+  low_random:
+    temperature: 0.5
+    top_p: 0.5
+    max_tokens: 768
+    name_user: 'user'
+    name_assistant: 'assistant'
+    img_detail: 'auto'
+    text_first: True
+
+claude-3-7-sonnet-20250219:
+ base:
+   chars_per_token: 4
+
+gemini-1.5-flash-002:
+  base:
+    temperature: 1.0
+    top_p: 0.95
+    max_tokens: 768
+    top_k: 40
+    text_first: True
+    chars_per_token: 4
+
+  low_random:
+    temperature: 0.9
+    top_p: 0.0
+    max_tokens: 768
+    top_k: 0
+    text_first: True
+    chars_per_token: 4
+
+
+gemini-2.0-flash-001:
+  base:
+    temperature: 1.0
+    top_p: 0.95
+    max_tokens: 768
+    top_k: 40
+    text_first: True
+    chars_per_token: 4
+
+  low_random:
+    temperature: 1.0
+    top_p: 0.1
+    max_tokens: 768
+    top_k: 20
+    text_first: True
+    chars_per_token: 4
+
+# Obs.:  as of Jun-2025, gemini-2.5-flash is the path for 001 version
+gemini-2.5-flash:
+  default:
+    temperature: 1.0
+    top_p: 0.95
+    max_tokens: 65536
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+
+  base:
+    temperature: 1.0
+    top_p: 0.95
+    max_tokens: 8192
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0
+
+  high_temp:
+    temperature: 1.0
+    top_p: 0.8
+    max_tokens: 8192
+    top_k: 40
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0
+
+  low_random:
+    temperature: 1.0
+    top_p: 0.1
+    max_tokens: 8192
+    top_k: 20
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0
+
+  zero_random:
+    temperature: 1.0
+    top_p: 0
+    max_tokens: 8192
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0
+
+  thinking_auto_base:
+    temperature: 1.0
+    top_p: 0.95
+    max_tokens: 65535
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: -1
+
+  thinking_auto_low_random:
+    temperature: 1
+    top_p: 0.5
+    max_tokens: 65535
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: -1
+
+ 
+  thinking_auto_zero_random:
+    temperature: 1
+    top_p: 0.01
+    max_tokens: 65535
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: -1
+
+  thinking_high_base: 
+    temperature: 1
+    top_p: 0.95
+    max_tokens: 65535
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 24576
+
+  thinking_high_zero_random: 
+    temperature: 1
+    top_p: 0.01
+    max_tokens: 65535
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 24576
+
+
+gemini-2.5-flash-lite:
+  base:
+    temperature: 1.0
+    top_p: 0.95
+    max_tokens: 65536
+    top_k: 40
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0
+
+  high_temp:
+    temperature: 1.0
+    top_p: 0.8
+    max_tokens: 65536
+    top_k: 40
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0
+
+
+  low_random:
+    temperature: 1.0
+    top_p: 0.1
+    max_tokens: 65536
+    top_k: 20
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0
+
+  zero_random:
+    temperature: 1.0
+    top_p: 0.01
+    max_tokens: 65536
+    top_k: 64
+    text_first: True
+    chars_per_token: 4
+    thinking_budget: 0

@@ -1,0 +1,38 @@
+services:
+  web:
+    image: jykoh/classifieds:latest
+    container_name: classifieds
+    ports:
+      - "<classifieds_port>:9980"
+    environment:
+      - CLASSIFIEDS=http://<your-server-hostname>:<classifieds_port>/
+      - RESET_TOKEN=<classifieds_reset_token>
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.1
+    container_name: classifieds_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: osclass
+    # Friendlier defaults under parallel startup / bulk import
+    command:
+      - --transaction-isolation=READ-COMMITTED
+      - --innodb_lock_wait_timeout=120
+      - --innodb_flush_log_at_trx_commit=2
+      - --max_connections=300
+    volumes:
+      # seed SQL lives here; MySQL runs it on first boot of a fresh volume
+      - ./mysql:/docker-entrypoint-initdb.d:ro
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysql -uroot -ppassword -e 'SELECT 1' || exit 1"]
+      interval: 1s
+      timeout: 4s
+      retries: 100
+
+volumes:
+  db_data: {}

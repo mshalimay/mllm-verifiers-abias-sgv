@@ -1,0 +1,106 @@
+model_: &model_ gemini-2.5-flash
+
+#============================
+#EXECUTOR AGENT
+#============================
+executor:
+  action_set_tag: som
+  prompt: p_executor
+  num_previous_state_actions: 100
+  out_utterance: True
+  max_model_call: 9
+  use_web_k: False
+  use_reflexion: False
+  num_previous_reflections: -1
+  caption_input_images: True
+  
+  # Model specific configs
+  lm_config:
+    model: *model_
+    gen_config_alias: base
+
+#============================
+# VERIFIER
+#============================
+verifier:
+  prompt: p_verifier
+  mode: sgv   
+  online_verify: True
+  num_previous_state_actions: 100
+  max_model_call: 9
+  max_verifier_executor_loop: 3
+  out_utterance: True
+  verify_every: 5
+  caption_input_images: True
+  
+  # Model specific configs
+  lm_config:
+    model: *model_
+    gen_config_alias: zero_random
+
+  # Observation info for prompt construction
+  use_img_observation: True
+  use_text_observation: False
+
+  # Execution trace info for prompt construction
+  trace_config:
+    use_low_level_actions_env_parsed: True
+    use_low_level_actions: False
+    use_assistant_utterance: False
+    use_image: True
+    image_info: som
+
+
+#============================
+# K EXTRACTION
+#============================
+k_extraction:
+  prompt: p_k_extraction
+  mode: sgv
+  expert: True
+  num_previous_state_actions: 100
+  max_model_call: 9
+  out_utterance: True
+  caption_input_images: False
+
+  # Model specific configs
+  lm_config:
+    model: *model_
+    gen_config_alias: zero_random
+
+  # Observation info for prompt construction
+  use_img_observation: True
+  use_text_observation: False
+
+  # Execution trace info for prompt construction
+  trace_config:
+    use_low_level_actions_env_parsed: False
+    use_low_level_actions: False
+    use_assistant_utterance: False
+    use_image: False
+    image_info: raw
+    text_obs_info: none
+    trace_info: none
+
+#============================
+# TEXT REFINER
+#============================
+text_refiner:
+  max_obs_length: 3840
+  chars_per_token: 4
+  lm_config:
+    _inherit_from: executor
+
+
+#=============================
+# CAPTIONER
+#=============================
+captioner:
+  lm_config:
+    model: Salesforce/blip2-flan-t5-xl
+
+#============================
+# REQUEST REFINER
+#============================
+request_refiner:
+  caption_input_img: True

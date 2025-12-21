@@ -1,0 +1,20 @@
+{
+  "google": [
+    "your-api-key"
+  ],
+  "openai": [
+    "your-api-key"
+  ],
+  "openrouter": [
+    "your-api-key"
+  ],
+  "anthropic": [
+    "your-api-key"
+  ],
+  "alibaba": [
+    "your-api-key"
+  ],
+  "together_ai": [
+    "your-api-key"
+  ]
+}

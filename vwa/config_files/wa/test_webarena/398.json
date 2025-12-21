@@ -1,0 +1,71 @@
+{
+  "sites": [
+    "gitlab"
+  ],
+  "task_id": 398,
+  "require_login": true,
+  "storage_state": "./.auth/gitlab_state.json",
+  "start_url": "PASS",
+  "geolocation": null,
+  "intent_template": "Fork {{repo}}.",
+  "instantiation_dict": {
+    "repo": "all source repos from Akilesh Kannan"
+  },
+  "intent": "Fork all source repos from Akilesh Kannan",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "program_html"
+    ],
+    "reference_answers": null,
+    "reference_url": "",
+    "program_html": [
+      {
+        "url": "PASS/byteblaze/SimCache",
+        "locator": "",
+        "required_contents": {
+          "must_include": [
+            "SimCache"
+          ]
+        }
+      },
+      {
+        "url": "PASS/byteblaze/dots",
+        "locator": "",
+        "required_contents": {
+          "must_include": [
+            "dots"
+          ]
+        }
+      },
+      {
+        "url": "PASS/byteblaze/CacheEval",
+        "locator": "",
+        "required_contents": {
+          "must_include": [
+            "CacheEval"
+          ]
+        }
+      },
+      {
+        "url": "PASS/byteblaze/nvidia-patch",
+        "locator": "",
+        "required_contents": {
+          "must_include": [
+            "404"
+          ]
+        }
+      },
+      {
+        "url": "PASS/byteblaze/viewgrades-scraper",
+        "locator": "",
+        "required_contents": {
+          "must_include": [
+            "404"
+          ]
+        }
+      }
+    ]
+  },
+  "intent_template_id": 352
+}
