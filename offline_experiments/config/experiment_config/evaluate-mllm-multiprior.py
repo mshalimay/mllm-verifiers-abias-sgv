@@ -4,8 +4,8 @@
 
 
 # If task list is provided, only evaluate for tasks in the list
-task_list_vwa = "offline_experiments/config/task_lists/vwa_lite.txt"
-# task_list_vwa = "offline_experiments/config/task_lists/debug_vwa.txt"
+task_list_vwa = ""
+# task_list_vwa = "offline_experiments/config/task_lists/vwa_lite.txt" # Runs only on VisualWebArena-lite subset
 task_list_osw = ""
 task_list_agrb_vwa = ""
 
