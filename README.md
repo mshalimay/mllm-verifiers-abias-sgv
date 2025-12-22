@@ -3,7 +3,7 @@
 Official codebase accompanying the paper: "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification".
 
 <p align="center">
-    🌐 <a href="https://jhc13.github.io/self-grounded-verification/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2507.11662" target="_blank">Paper</a> | 🗂️ <a href="https://drive.google.com/drive/folders/15nAWNkyo6Jhsxl6RZg8cFRS_6jP-Xr-H?usp=drive_link" target="_blank">Data</a> <br>
+    🌐 <a href="https://mshalimay.github.io/agreement-bias-sgv/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2507.11662" target="_blank">Paper</a> | 🗂️ <a href="https://drive.google.com/drive/folders/15nAWNkyo6Jhsxl6RZg8cFRS_6jP-Xr-H?usp=drive_link" target="_blank">Data</a> <br>
 </p>
 
 
