@@ -89,7 +89,7 @@ Additionally:
 For other data and trajectories, please contact the authors.
 
 ## Citation
-If you find this useful for your research, please use the following.
+If you find this useful and would like to cite this work, please use the following.
 
 
 ```bibtex
