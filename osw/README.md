@@ -1,4 +1,3 @@
-## Experiment scripts
 ## README
 
 This file contains instructions to run experiments on the OSWorld benchmarks.
