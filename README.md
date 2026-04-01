@@ -85,13 +85,13 @@ Then, follow the instructions in the README files of `vwa/`, `osw/`, `offline_ex
 
 
 ## Data
-- Trajectories utilized for the offline experiments are available at this [link](https://drive.google.com/drive/folders/1S8ic6JJ3h-iDucwsstgJJrDfelMILmBr?usp=drive_link). Download the directory to the root as `data`. See `offline_experiments/README.MD` for more details.
+- **Trajectories used in the offline experiments**: [link](https://drive.google.com/drive/folders/1S8ic6JJ3h-iDucwsstgJJrDfelMILmBr?usp=drive_link). Download the directory to the root as `data`. See `offline_experiments/README.MD` for more details.
 
-- SGV trajectories referenced in VisualWebArena leaderboard are available at this [link](https://drive.google.com/drive/folders/1iMpYpzKQQsWS46OmHgsr1T2yq6BdnICQ?usp=drive_link). 
+- **SGV trajectories referenced in VisualWebArena leaderboard**: [link](https://drive.google.com/drive/folders/1iMpYpzKQQsWS46OmHgsr1T2yq6BdnICQ?usp=drive_link). 
 
-- OSWorld trajectories with SGV are available at this [link](https://drive.google.com/drive/folders/1kzxyKcJMuz3FChPb375fTev-Qu5RJcZC?usp=drive_link).
+- **OSWorld trajectories with SGV**: [link](https://drive.google.com/drive/folders/1kzxyKcJMuz3FChPb375fTev-Qu5RJcZC?usp=drive_link).
 
-- robomimic models are available at this [link](https://drive.google.com/drive/folders/1HP8bsg0Z_U1bgb4sGIPYJgvYNNJkaZew?usp=sharing).
+- **Robomimic models**: [link](https://drive.google.com/drive/folders/1HP8bsg0Z_U1bgb4sGIPYJgvYNNJkaZew?usp=sharing).
 
 For other data and trajectories, please contact the authors.
 
