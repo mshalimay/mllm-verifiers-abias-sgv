@@ -1,0 +1,3 @@
+Compare the prediction with the actual state of the system in the current time step depicted in the image. If the current state is not as per the prediction, label it as failure. 
+If completion was predicted and the task has been completed, label it as success.
+If the prediction is that the task will be in progress and the task is in progress, label it as in progress.

@@ -1,0 +1,2 @@
+You are highly skilled in robotic task verification.
+Based on the task description and the image of the initial state, predict how the task must look like at the current time stamp.

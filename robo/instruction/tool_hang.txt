@@ -1,0 +1,5 @@
+Task Description:
+Pick up L-shaped pencil and insert L-shaped pencil into the hole
+Pick up tool and hang tool on L-shaped pencil
+
+Current time stamp: 125/496
