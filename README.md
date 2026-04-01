@@ -18,12 +18,12 @@ Official codebase accompanying the paper: "Let's Think in Two Steps: Mitigating 
   - (iii) documentation about changes to the environment.
 - **`osw/`**: OSWorld codebase. Contains implementation of UI-Tars paired with MLLM verifiers and SGV.
 - **`offline_experiments/`**: Evaluation of MLLMs as verifiers across models, prompt templates, test-time scaling, trajectory configurations, image annotations, environments, and more.
-- **`robomimic/`**: robomimic-related code and models.
+- **`robo/`**: robomimic-related code and models.
 
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/mandrade/mllm-verifiers-abias-sgv.git
+git clone https://github.com/mshalimay/mllm-verifiers-abias-sgv
 ```
 
 (Optional) To clone specific directories only, use sparse checkout:
@@ -36,6 +36,11 @@ git checkout main
 # For OSWorld only:
 git sparse-checkout init --cone
 git sparse-checkout set core_utils llms osw
+git checkout main
+
+# For robomimic only:
+git sparse-checkout init --cone
+git sparse-checkout set core_utils llms robo
 git checkout main
 ```
 
@@ -58,7 +63,7 @@ Install the desired dependencies:
 
 ```bash
 # For all environments and experiments:
-pip install -e ".[vwa,osw,offline,robomimic]"
+pip install -e ".[vwa,osw,offline,robo]"
 
 # For (Visual)WebArena only:
 pip install -e ".[vwa]"
@@ -70,21 +75,23 @@ pip install -e ".[osw]"
 pip install -e ".[offline,vwa]"
 
 # For robomimic only:
-pip install -e ".[robomimic]"
+pip install -e ".[robo]"
 
 # For LLMs utilities only:
 pip install -e .
 ```
 
-Then, follow the instructions in the README files of `vwa/`, `osw/`, `offline_experiments/`, and `robomimic/` directories for any additional steps and steps to replicate the experiments.
+Then, follow the instructions in the README files of `vwa/`, `osw/`, `offline_experiments/`, and `robo/` directories for any additional steps to replicate the experiments.
 
 
 ## Data
-The trajectories utilized for the offline experiments are available at this [link](https://drive.google.com/drive/folders/1S8ic6JJ3h-iDucwsstgJJrDfelMILmBr?usp=drive_link). Download the directory to the root as `data`. See `offline_experiments/README.MD` for more details.
+- Trajectories utilized for the offline experiments are available at this [link](https://drive.google.com/drive/folders/1S8ic6JJ3h-iDucwsstgJJrDfelMILmBr?usp=drive_link). Download the directory to the root as `data`. See `offline_experiments/README.MD` for more details.
 
-Additionally:
 - SGV trajectories referenced in VisualWebArena leaderboard are available at this [link](https://drive.google.com/drive/folders/1iMpYpzKQQsWS46OmHgsr1T2yq6BdnICQ?usp=drive_link). 
+
 - OSWorld trajectories with SGV are available at this [link](https://drive.google.com/drive/folders/1kzxyKcJMuz3FChPb375fTev-Qu5RJcZC?usp=drive_link).
+
+- robomimic models are available at this [link](https://drive.google.com/drive/folders/1HP8bsg0Z_U1bgb4sGIPYJgvYNNJkaZew?usp=sharing).
 
 For other data and trajectories, please contact the authors.
 

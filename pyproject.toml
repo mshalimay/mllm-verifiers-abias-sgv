@@ -116,8 +116,19 @@ offline=[
     "scikit-learn",
     "scipy"
 ]
-robomimic = [
-# Under construction
+robo = [
+    "h5py",
+    "mujoco",
+    "egl-probe",
+    "tqdm",
+    "opencv-python",
+    "numba",
+    "scipy",
+    "openai",
+    "pillow",
+    "matplotlib",
+    "diffusers",
+    "imageio",
 ]
 
 dev = [
@@ -136,7 +147,7 @@ exclude = [
     "vwa*",
     "osw*",
     "offline_experiments*",
-    "robomimic*",
+    "robo*",
     "data*",
     "*.tests*",
     "*.__pycache__*",

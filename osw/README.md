@@ -1,10 +1,10 @@
-## README
+# README
 
 This file contains instructions to run experiments on the OSWorld benchmarks.
 
 Original instructions can be found at: [OSWorld](https://github.com/xlang-ai/OSWorld). 
 
-# 1) Python Setup
+## 1) Python Setup
 1. Create a virtual environment using your preferred method.
 
     ```shell
@@ -20,7 +20,7 @@ Original instructions can be found at: [OSWorld](https://github.com/xlang-ai/OSW
 2. Install required dependencies. From the repository's root:
 
 
-# 2) Running experiments
+## 2) Running experiments
 Our main experiments utilize the UI-TARS-1.5-7B GUI agent. To use the model, you have two options:
 (i) Host the model using vLLM, or (ii) Use an external model provider.
 
@@ -92,9 +92,9 @@ Where:
 
 
 
-# 3) Other
+## 3) Other
 
-## 3.1) Summarize results
+### 3.1) Summarize results
 The file `summarize_results.py` can be used to aggregate the results and output the success rates to the console and a `summary.txt` file in the results directory.
 ```bash
 cd osw
@@ -102,5 +102,5 @@ python summarize_results.py <run_name>
 ```
 Where: `<run_name>`: The name of the experiment in the results directory.
 
-## 3.2) Visualize trajectories
+### 3.2) Visualize trajectories
 Use the script `utils_osw/render_trajectories.py` to render `.json` trajectories to an HTML file for visualization.

@@ -202,4 +202,29 @@ frontend/.idea/
 # Package metadata dirs
 *.egg-info/
 
+# --- robomimic ---
+# Cloned dependency repos
+robo/robomimic/
+robo/robosuite/
 
+# MuJoCo
+robo/mjkey.txt
+robo/.mujocomanip_temp_model.xml
+robo/macros_private.py
+
+# Generated outputs
+robo/figure/
+robo/config/
+robo/datasets/
+robo/output/
+robo/trainings/
+
+# Test artifacts
+robo/tests/figure/
+robo/tests/instruction/
+robo/tests/language/
+robo/tests/results/
+robo/tests/video/
+
+# Images generated during rollouts
+robo/**/*.jpg
