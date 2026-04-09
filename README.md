@@ -1,6 +1,10 @@
 ## Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification
 
-Official codebase accompanying the paper: "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification".
+Official codebase accompanying the ICLR 2026 paper: "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification".
+
+[![ICLR 2026](https://img.shields.io/badge/ICLR-2026-blue.svg)](https://iclr.cc/virtual/2026/poster/10007102)
+[![arXiv](https://img.shields.io/badge/arXiv-2507.11662-b31b1b.svg)](https://arxiv.org/abs/2507.11662) 
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)  
 
 <p align="center">
     🌐 <a href="https://mshalimay.github.io/agreement-bias-sgv/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2507.11662" target="_blank">Paper</a> | 🗂️ <a href="https://drive.google.com/drive/folders/15nAWNkyo6Jhsxl6RZg8cFRS_6jP-Xr-H?usp=drive_link" target="_blank">Data</a> <br>
